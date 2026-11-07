@@ -23,13 +23,13 @@ body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-c
 .layer { display: none; min-height: 100vh; padding-top: 100px; }
 .layer.active { display: block; animation: fadeIn 0.5s ease; }
 
-/* Layer 1: Slider */
-.slider-container { width: 100%; height: 70vh; overflow: hidden; position: relative; }
-.slider { display: flex; width: 300%; height: 100%; animation: slide 15s infinite; }
-.slider img { width: 33.33%; height: 100%; object-fit: cover; }
-.hero-footer { text-align: center; padding: 50px; }
-.btn-explore { background: none; border: 1px solid black; padding: 15px 30px; cursor: pointer; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.2em; margin-bottom: 20px; }
-.footer-contact { font-size: 0.8rem; letter-spacing: 0.2em; color: #888; }
+/* Layer 1: Video Background */
+.video-container { position: absolute; top: 0; left: 0; width: 100%; height: 70vh; overflow: hidden; z-index: 0; }
+.bg-video { width: 100%; height: 100%; object-fit: cover; }
+.hero-footer { text-align: center; padding: 50px; position: relative; z-index: 1; }
+.btn-explore { background: rgba(255,255,255,0.8); border: 1px solid black; padding: 15px 30px; cursor: pointer; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.2em; margin-bottom: 20px; transition: 0.3s; }
+.btn-explore:hover { background: white; }
+.footer-contact { font-size: 0.8rem; letter-spacing: 0.2em; color: #fff; text-shadow: 0 0 5px rgba(0,0,0,0.5); }
 
 /* Layer 2: Gallery */
 .gallery-container { padding: 50px; }
