@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raydinata Sabriliant Al Ghifari</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- LAYER 1: Slider & Menu -->
+    <section id="layer-1" class="layer active">
+        <nav class="nav-menu">
+            <div class="logo">RAYDINATA SABRILIANT AL GHIFARI & ARSHADA AULIA</div>
+            <div class="menu-links">
+                <a href="#" onclick="showLayer('layer-1')">Home</a>
+                <a href="#" onclick="showLayer('layer-2')">Gallery</a>
+            </div>
+        </nav>
+
+        <div class="slider-container">
+            <div class="slider">
+                <img src="images/toto%201.jpeg" alt="Slide 1">
+                <img src="images/foto2.jpeg" alt="Slide 2">
+                <img src="images/foto3.jpeg" alt="Slide 3">
+            </div>
+        </div>
+        <div class="hero-footer">
+            <button class="btn-explore" onclick="showLayer('layer-2')">Explore Gallery</button>
+            <div class="footer-contact">raydinataalgifari@gmail.com</div>
+        </div>
+    </section>
+
+    <!-- LAYER 2: Gallery Grid -->
+    <section id="layer-2" class="layer">
+        <nav class="nav-menu">
+            <div class="logo">GALLERY</div>
+            <div class="menu-links">
+                <a href="#" onclick="showLayer('layer-1')">Home</a>
+                <a href="#" onclick="showLayer('layer-2')">Gallery</a>
+            </div>
+        </nav>
+
+        <main class="gallery-container">
+            <div class="gallery-grid">
+                <!-- 15 Photos -->
+                <div class="photo-card" onclick="openLightbox('images/foto10.jpeg')"><img src="images/foto10.jpeg" alt="Foto 10" loading="lazy"></div>
+                <div class="photo-card" onclick="openLightbox('images/foto14.jpeg')"><img src="images/foto14.jpeg" alt="Foto 14" loading="lazy"></div>
+                <div class="photo-card" onclick="openLightbox('images/foto4.jpeg')"><img src="images/foto4.jpeg" alt="Foto 4" loading="lazy"></div>
+                <div class="photo-card" onclick="openLightbox('images/foto11.jpeg')"><img src="images/foto11.jpeg" alt="Foto 11" loading="lazy"></div>
+                <div class="photo-card" onclick="openLightbox('images/foto5.jpeg')"><img src="images/foto5.jpeg" alt="Foto 5" loading="lazy"></div>
+                <div class="photo-card" onclick="openLightbox('images/foto7.jpeg')"><img src="images/foto7.jpeg" alt="Foto 7" loading="lazy"></div>
+                <div class="photo-card" onclick="openLightbox('images/foto9.jpeg')"><img src="images/foto9.jpeg" alt="Foto 9" loading="lazy"></div>
+                <div class="photo-card" onclick="openLightbox('images/foto2.jpeg')"><img src="images/foto2.jpeg" alt="Foto 2" loading="lazy"></div>
+                <div class="photo-card" onclick="openLightbox('images/foto3.jpeg')"><img src="images/foto3.jpeg" alt="Foto 3" loading="lazy"></div>
+                <div class="photo-card" onclick="openLightbox('images/toto%201.jpeg')"><img src="images/toto%201.jpeg" alt="Foto 1" loading="lazy"></div>
+                <div class="photo-card" onclick="openLightbox('images/foto12.jpeg')"><img src="images/foto12.jpeg" alt="Foto 12" loading="lazy"></div>
+                <div class="photo-card" onclick="openLightbox('images/foto13.jpeg')"><img src="images/foto13.jpeg" alt="Foto 13" loading="lazy"></div>
+                <div class="photo-card" onclick="openLightbox('images/foto15.jpeg')"><img src="images/foto15.jpeg" alt="Foto 15" loading="lazy"></div>
+                <div class="photo-card" onclick="openLightbox('images/foto8.jpeg')"><img src="images/foto8.jpeg" alt="Foto 8" loading="lazy"></div>
+                <div class="photo-card" onclick="openLightbox('images/foto6.jpeg')"><img src="images/foto6.jpeg" alt="Foto 6" loading="lazy"></div>
+            </div>
+        </main>
+    </section>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Full view">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
